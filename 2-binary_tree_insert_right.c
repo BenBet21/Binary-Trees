@@ -13,7 +13,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 
 	arbre = malloc(sizeof(binary_tree_t));
 
-	if (arbre == NULL)
+	if (arbre == NULL || parent == NULL)
 	{
 		return (NULL);
 	}
