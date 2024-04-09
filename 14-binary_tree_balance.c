@@ -18,10 +18,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 	{
 		return (0);
 	}
-	if (tree->left == NULL && tree->right == NULL)
-	{
-		return (0);
-	}
 	niveau_gauche = binary_tree_height(tree->left);
 	niveau_droite = binary_tree_height(tree->right);
 
@@ -51,10 +47,6 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	size_t niveau_gauche, niveau_droite;
 
 	if (tree == NULL)
-	{
-		return (0);
-	}
-	if (tree->left == NULL && tree->right == NULL)
 	{
 		return (0);
 	}
