@@ -37,11 +37,8 @@ int binary_tree_balance(const binary_tree_t *tree)
 	}
 	niveau_gauche = binary_tree_height(tree->left);
 	niveau_droite = binary_tree_height(tree->right);
-
 	return (niveau_gauche - niveau_droite);
 }
-
-
 /**
  * binary_tree_height - Calculate the height of a binary tree.
  *
